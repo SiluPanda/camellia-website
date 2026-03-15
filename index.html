@@ -65,39 +65,192 @@
     </div>
   </section>
 
-  <!-- Phone Mockup -->
-  <section class="phone-showcase">
-    <div class="phone-device">
-      <div class="phone-notch"></div>
-      <div class="phone-screen">
-        <div class="app-screen">
-          <div class="app-statusbar">9:41</div>
-          <div class="app-header">Scan Product</div>
-          <div class="app-scan-area">
-            <div class="scan-viewfinder">
-              <div class="scan-corner tl"></div>
-              <div class="scan-corner tr"></div>
-              <div class="scan-corner bl"></div>
-              <div class="scan-corner br"></div>
-              <div class="scan-laser"></div>
+  <!-- App Screenshots -->
+  <section class="screenshots">
+    <div class="screenshots-inner">
+
+      <!-- Screen 1: Home -->
+      <div class="phone-device">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="app-screen app-home">
+            <div class="app-statusbar">9:41</div>
+            <div class="app-header">Good morning</div>
+            <div class="app-home-content">
+              <div class="home-score-card">
+                <div class="score-ring">
+                  <svg viewBox="0 0 80 80">
+                    <circle cx="40" cy="40" r="34" fill="none" stroke="#e8e8e8" stroke-width="5"/>
+                    <circle cx="40" cy="40" r="34" fill="none" stroke="#00D26A" stroke-width="5" stroke-dasharray="171" stroke-dashoffset="43" stroke-linecap="round" transform="rotate(-90 40 40)"/>
+                  </svg>
+                  <span class="score-num">75</span>
+                </div>
+                <div class="score-info">
+                  <div class="score-title">Daily Scan Score</div>
+                  <div class="score-sub">3 items scanned today</div>
+                </div>
+              </div>
+              <div class="home-section-label">Recent Scans</div>
+              <div class="home-scan-item">
+                <div class="scan-item-dot safe"></div>
+                <div class="scan-item-info">
+                  <div class="scan-item-name">Organic Valley Milk</div>
+                  <div class="scan-item-meta">Low risk &middot; 2 min ago</div>
+                </div>
+              </div>
+              <div class="home-scan-item">
+                <div class="scan-item-dot warn"></div>
+                <div class="scan-item-info">
+                  <div class="scan-item-name">Doritos Nacho Cheese</div>
+                  <div class="scan-item-meta">Medium risk &middot; 18 min ago</div>
+                </div>
+              </div>
+              <div class="home-scan-item">
+                <div class="scan-item-dot danger"></div>
+                <div class="scan-item-info">
+                  <div class="scan-item-name">Coca-Cola Classic</div>
+                  <div class="scan-item-meta">High risk &middot; 1 hr ago</div>
+                </div>
+              </div>
             </div>
-            <div class="scan-hint">Point camera at barcode</div>
-          </div>
-          <div class="app-result">
-            <div class="app-result-row">
-              <div class="app-result-label">Health Assessment</div>
-              <div class="app-result-value">Safe for you</div>
+            <div class="app-navbar">
+              <div class="app-nav-item active"><div class="app-nav-dot"></div>Home</div>
+              <div class="app-nav-item"><div class="app-nav-dot"></div>Scan</div>
+              <div class="app-nav-item"><div class="app-nav-dot"></div>History</div>
+              <div class="app-nav-item"><div class="app-nav-dot"></div>Profile</div>
             </div>
-            <div class="app-result-product">Organic Valley Whole Milk</div>
-          </div>
-          <div class="app-navbar">
-            <div class="app-nav-item"><div class="app-nav-dot"></div>Home</div>
-            <div class="app-nav-item active"><div class="app-nav-dot"></div>Scan</div>
-            <div class="app-nav-item"><div class="app-nav-dot"></div>History</div>
-            <div class="app-nav-item"><div class="app-nav-dot"></div>Profile</div>
           </div>
         </div>
       </div>
+
+      <!-- Screen 2: Scan -->
+      <div class="phone-device phone-featured">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="app-screen">
+            <div class="app-statusbar">9:41</div>
+            <div class="app-header">Scan Product</div>
+            <div class="app-scan-area">
+              <div class="scan-viewfinder">
+                <div class="scan-corner tl"></div>
+                <div class="scan-corner tr"></div>
+                <div class="scan-corner bl"></div>
+                <div class="scan-corner br"></div>
+                <div class="scan-laser"></div>
+              </div>
+              <div class="scan-hint">Point camera at barcode</div>
+            </div>
+            <div class="app-result">
+              <div class="app-result-row">
+                <div class="app-result-label">Health Assessment</div>
+                <div class="app-result-value">Safe for you</div>
+              </div>
+              <div class="app-result-product">Organic Valley Whole Milk</div>
+            </div>
+            <div class="app-navbar">
+              <div class="app-nav-item"><div class="app-nav-dot"></div>Home</div>
+              <div class="app-nav-item active"><div class="app-nav-dot"></div>Scan</div>
+              <div class="app-nav-item"><div class="app-nav-dot"></div>History</div>
+              <div class="app-nav-item"><div class="app-nav-dot"></div>Profile</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Screen 3: Analysis -->
+      <div class="phone-device">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="app-screen app-analysis">
+            <div class="app-statusbar">9:41</div>
+            <div class="app-header-row">
+              <span class="back-arrow">&larr;</span>
+              <span>Analysis</span>
+            </div>
+            <div class="analysis-content">
+              <div class="analysis-product">Coca-Cola Classic</div>
+              <div class="analysis-brand">The Coca-Cola Company</div>
+              <div class="analysis-badge danger">High Risk</div>
+              <div class="analysis-section">
+                <div class="analysis-section-title">Health Warnings</div>
+                <div class="analysis-warning"><span class="warn-icon">!</span> Very high sugar content (39g per serving)</div>
+                <div class="analysis-warning"><span class="warn-icon">!</span> Not suitable for diabetes management</div>
+                <div class="analysis-warning"><span class="warn-icon">!</span> Contains phosphoric acid</div>
+              </div>
+              <div class="analysis-section">
+                <div class="analysis-section-title">Nutrition per Serving</div>
+                <div class="nutrition-row"><span>Calories</span><span class="nutrition-val">140</span></div>
+                <div class="nutrition-row"><span>Sugar</span><span class="nutrition-val danger-text">39g</span></div>
+                <div class="nutrition-row"><span>Sodium</span><span class="nutrition-val">45mg</span></div>
+              </div>
+              <div class="analysis-btn">View Alternatives</div>
+            </div>
+            <div class="app-navbar">
+              <div class="app-nav-item"><div class="app-nav-dot"></div>Home</div>
+              <div class="app-nav-item active"><div class="app-nav-dot"></div>Scan</div>
+              <div class="app-nav-item"><div class="app-nav-dot"></div>History</div>
+              <div class="app-nav-item"><div class="app-nav-dot"></div>Profile</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Screen 4: Alternatives -->
+      <div class="phone-device">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="app-screen app-alts">
+            <div class="app-statusbar">9:41</div>
+            <div class="app-header-row">
+              <span class="back-arrow">&larr;</span>
+              <span>Alternatives</span>
+            </div>
+            <div class="alts-content">
+              <div class="alts-for">Safer options for <strong>Coca-Cola</strong></div>
+              <div class="alt-card">
+                <div class="alt-card-top">
+                  <div>
+                    <div class="alt-name">Zevia Zero Calorie</div>
+                    <div class="alt-brand">Zevia</div>
+                  </div>
+                  <div class="analysis-badge safe-sm">Low</div>
+                </div>
+                <div class="alt-reason">Zero sugar, naturally sweetened with stevia</div>
+              </div>
+              <div class="alt-card">
+                <div class="alt-card-top">
+                  <div>
+                    <div class="alt-name">Spindrift Lemon</div>
+                    <div class="alt-brand">Spindrift</div>
+                  </div>
+                  <div class="analysis-badge safe-sm">Low</div>
+                </div>
+                <div class="alt-reason">Only 4g sugar, real squeezed fruit</div>
+              </div>
+              <div class="alt-card">
+                <div class="alt-card-top">
+                  <div>
+                    <div class="alt-name">LaCroix Pamplemousse</div>
+                    <div class="alt-brand">LaCroix</div>
+                  </div>
+                  <div class="analysis-badge safe-sm">Low</div>
+                </div>
+                <div class="alt-reason">Zero sugar, zero calories, no sweeteners</div>
+              </div>
+            </div>
+            <div class="app-navbar">
+              <div class="app-nav-item"><div class="app-nav-dot"></div>Home</div>
+              <div class="app-nav-item active"><div class="app-nav-dot"></div>Scan</div>
+              <div class="app-nav-item"><div class="app-nav-dot"></div>History</div>
+              <div class="app-nav-item"><div class="app-nav-dot"></div>Profile</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="screenshots-labels">
+      <span>Home</span><span>Scan</span><span>Analysis</span><span>Alternatives</span>
     </div>
   </section>
 
