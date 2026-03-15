@@ -12,11 +12,7 @@
   <nav class="nav nav--light">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <svg class="logo-petal" viewBox="0 0 32 32" fill="none" style="color: var(--sage);">
-          <path d="M16 2C12 6 4 12 4 18c0 6.627 5.373 12 12 12s12-5.373 12-12c0-6-8-12-12-16z" fill="currentColor" opacity="0.2"/>
-          <path d="M16 6C13 9.5 8 14 8 18c0 4.418 3.582 8 8 8s8-3.582 8-8c0-4-5-8.5-8-12z" fill="currentColor" opacity="0.4"/>
-          <path d="M16 11c-2 2.5-5 5.5-5 8a5 5 0 0010 0c0-2.5-3-5.5-5-8z" fill="currentColor" opacity="0.7"/>
-        </svg>
+        <svg width="28" height="28" viewBox="0 0 100 100" fill="none"><path d="M50 8C35 25 12 45 12 65C12 84.882 29.118 95 50 95C70.882 95 88 84.882 88 65C88 45 65 25 50 8Z" fill="#00D26A" opacity="0.15"/><path d="M50 18C38 32 20 48 20 65C20 80.464 33.536 90 50 90C66.464 90 80 80.464 80 65C80 48 62 32 50 18Z" fill="#00D26A" opacity="0.3"/><path d="M50 32C42 42 30 53 30 65C30 76.046 38.954 85 50 85C61.046 85 70 76.046 70 65C70 53 58 42 50 32Z" fill="#00D26A" opacity="0.6"/><path d="M50 28V85" stroke="#00D26A" stroke-width="1.5" opacity="0.5"/><path d="M50 50C42 55 34 62 32 68" stroke="#00D26A" stroke-width="1" opacity="0.4"/><path d="M50 42C58 48 66 56 68 64" stroke="#00D26A" stroke-width="1" opacity="0.4"/></svg>
         Camellia
       </a>
       <ul class="nav-links">
@@ -27,7 +23,7 @@
     </div>
   </nav>
 
-  <div class="legal-hero">
+  <div class="legal-hero-section">
     <div class="legal-hero-inner">
       <h1>Privacy Policy</h1>
       <p class="legal-meta">Effective date: March 15, 2026 &middot; Last updated: March 15, 2026</p>
@@ -35,17 +31,14 @@
   </div>
 
   <main class="legal-page">
-
     <p>Camellia ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use the Camellia mobile application (the "App"). Please read this policy carefully. By using the App, you agree to the collection and use of information in accordance with this policy.</p>
 
     <h2>1. Information We Collect</h2>
-
     <h3>1.1 Information You Provide</h3>
     <ul>
       <li><strong>Account information:</strong> When you sign in with Google, we receive your name, email address, and profile picture from Google. We do not receive or store your Google password.</li>
       <li><strong>Health profile:</strong> You may voluntarily provide health conditions (e.g., diabetes, hypertension), allergies (e.g., peanuts, gluten), and dietary preferences. This information is stored on your device and, if you opt in to cloud sync, in our secure cloud database.</li>
     </ul>
-
     <h3>1.2 Information Collected Automatically</h3>
     <ul>
       <li><strong>Scan data:</strong> When you scan a food barcode, we record the barcode number, product name, scan timestamp, and the AI-generated health analysis. This data is stored locally on your device and optionally synced to the cloud.</li>
@@ -53,7 +46,6 @@
       <li><strong>Crash reports:</strong> We use Firebase Crashlytics to collect crash logs and diagnostic data to improve app stability. Crash reports may include device model, OS version, and stack traces. They do not contain your health data.</li>
       <li><strong>Performance data:</strong> We use Firebase Performance Monitoring to measure app load times and network request latencies. This data is aggregated and anonymized.</li>
     </ul>
-
     <h3>1.3 Camera Access</h3>
     <p>The App requests access to your device's camera solely for the purpose of scanning food barcodes. Camera images are processed on-device in real-time to detect barcodes. We do not capture, store, or transmit camera images or video.</p>
 
@@ -69,34 +61,14 @@
     <h2>3. How We Share Your Information</h2>
     <p><strong>We do not sell, rent, or trade your personal information to third parties.</strong></p>
     <p>We share information only in the following limited circumstances:</p>
-
     <table>
-      <thead>
-        <tr>
-          <th>Recipient</th>
-          <th>Data Shared</th>
-          <th>Purpose</th>
-        </tr>
-      </thead>
+      <thead><tr><th>Recipient</th><th>Data Shared</th><th>Purpose</th></tr></thead>
       <tbody>
-        <tr>
-          <td>Google (Firebase)</td>
-          <td>Account info, synced data, analytics, crash reports</td>
-          <td>Authentication, cloud storage, analytics, crash reporting</td>
-        </tr>
-        <tr>
-          <td>FatSecret API</td>
-          <td>Barcode numbers</td>
-          <td>Retrieving product nutrition data</td>
-        </tr>
-        <tr>
-          <td>AI Model Provider (DeepInfra)</td>
-          <td>Product nutrition data, your health conditions and allergies (anonymized, not linked to your identity)</td>
-          <td>Generating personalized health analysis</td>
-        </tr>
+        <tr><td>Google (Firebase)</td><td>Account info, synced data, analytics, crash reports</td><td>Authentication, cloud storage, analytics, crash reporting</td></tr>
+        <tr><td>FatSecret API</td><td>Barcode numbers</td><td>Retrieving product nutrition data</td></tr>
+        <tr><td>AI Model Provider (DeepInfra)</td><td>Product nutrition data, your health conditions and allergies (anonymized, not linked to your identity)</td><td>Generating personalized health analysis</td></tr>
       </tbody>
     </table>
-
     <p>When your health conditions and allergies are sent to the AI model for analysis, they are transmitted as anonymized text parameters&mdash;not linked to your name, email, or any account identifier. The AI provider does not have access to your identity.</p>
 
     <h2>4. Data Storage and Security</h2>
@@ -140,15 +112,11 @@
     </ul>
   </main>
 
-  <footer class="footer">
+  <footer class="legal-footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <a href="index.html" class="nav-logo" style="color: var(--forest);">
-          <svg class="logo-petal" viewBox="0 0 32 32" fill="none" style="color: var(--sage);">
-            <path d="M16 2C12 6 4 12 4 18c0 6.627 5.373 12 12 12s12-5.373 12-12c0-6-8-12-12-16z" fill="currentColor" opacity="0.2"/>
-            <path d="M16 6C13 9.5 8 14 8 18c0 4.418 3.582 8 8 8s8-3.582 8-8c0-4-5-8.5-8-12z" fill="currentColor" opacity="0.4"/>
-            <path d="M16 11c-2 2.5-5 5.5-5 8a5 5 0 0010 0c0-2.5-3-5.5-5-8z" fill="currentColor" opacity="0.7"/>
-          </svg>
+        <a href="index.html" class="nav-logo">
+          <svg width="24" height="24" viewBox="0 0 100 100" fill="none"><path d="M50 8C35 25 12 45 12 65C12 84.882 29.118 95 50 95C70.882 95 88 84.882 88 65C88 45 65 25 50 8Z" fill="#00D26A" opacity="0.15"/><path d="M50 18C38 32 20 48 20 65C20 80.464 33.536 90 50 90C66.464 90 80 80.464 80 65C80 48 62 32 50 18Z" fill="#00D26A" opacity="0.3"/><path d="M50 32C42 42 30 53 30 65C30 76.046 38.954 85 50 85C61.046 85 70 76.046 70 65C70 53 58 42 50 32Z" fill="#00D26A" opacity="0.6"/><path d="M50 28V85" stroke="#00D26A" stroke-width="1.5" opacity="0.5"/></svg>
           Camellia
         </a>
         <p>Decode your food. Personalize your health.</p>
@@ -163,7 +131,6 @@
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 Camellia. All rights reserved.</span>
-      <span>Made with care for people who care about what they eat.</span>
     </div>
   </footer>
 
